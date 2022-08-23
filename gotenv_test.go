@@ -7,7 +7,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/subosito/gotenv"
+
+	"github.com/xdorro/gotenv"
 )
 
 var formats = []struct {
@@ -138,7 +139,10 @@ var errorFormats = []struct {
 	err string
 }{
 	// allows export line if you want to do it that way and checks for unset variables
-	{"OPTION_A=2\nexport OH_NO_NOT_SET", gotenv.Env{"OPTION_A": "2"}, "line `export OH_NO_NOT_SET` has an unset variable"},
+	{
+		"OPTION_A=2\nexport OH_NO_NOT_SET", gotenv.Env{"OPTION_A": "2"},
+		"line `export OH_NO_NOT_SET` has an unset variable",
+	},
 
 	// throws an error if line format is incorrect
 	{`lol$wut`, gotenv.Env{}, "line `lol$wut` doesn't match format"},

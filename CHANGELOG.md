@@ -32,7 +32,7 @@
 
 ### Changed
 
-- Reduce complexity and improve source code for having `A+` score in [goreportcard](https://goreportcard.com/report/github.com/subosito/gotenv).
+- Reduce complexity and improve source code for having `A+` score in [goreportcard](https://goreportcard.com/report/github.com/xdorro/gotenv).
 - Updated README with mentions to all available functions
 
 ### Removed

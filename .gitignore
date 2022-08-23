@@ -2,3 +2,4 @@
 *.out
 annotate.json
 profile.cov
+.idea
